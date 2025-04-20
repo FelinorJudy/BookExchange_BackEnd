@@ -28,7 +28,7 @@ public class UserController {
         else {
             userService.saveUser(user);
             userService.sendToken(user);
-            return ResponseEntity.status(201).body(Collections.singletonMap("message", "Utente creato, clicca sul link per confermare la tua mail: " + "http://localhost:4100/users/confirm?token=" + user.getToken()));
+            return ResponseEntity.status(201).body(Collections.singletonMap("message", "Utente creato, clicca sul link per confermare la tua mail: " + "http://localhost:8080/users/confirm?token=" + user.getToken()));
         }
     }
 
