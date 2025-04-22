@@ -21,7 +21,7 @@ public class UserService {
     }
 
     public void sendToken(User user) {
-        String link = "http://localhost:4100/users/confirm" + user.getToken();
+        String link = "http://localhost:8080/users/confirm" + user.getToken();
         System.out.println("Link per completare la registrazione: " + link);
     }
 
